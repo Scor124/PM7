@@ -1,0 +1,27 @@
+﻿<Page x:Class="ПМ._07_Соадминистрирование.Pages.PageSubjects"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ПМ._07_Соадминистрирование.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageSubjects">
+
+    <Grid Margin="10" >
+        <ScrollViewer >
+            <DataGrid x:Name="subjectsDataGrid" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False" CanUserReorderColumns="True" >
+                <DataGrid.RowStyle>
+                    <Style TargetType="DataGridRow">
+                        <Setter Property="Height" Value="26"/>
+                    </Style>
+                </DataGrid.RowStyle>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Код предмета" Binding="{Binding Код_предмета}"/>
+                    <DataGridTextColumn Header="Наименование предмета" Binding="{Binding Наименование_предмета}"/>
+                    <DataGridTextColumn Header="Описание предмета" Binding="{Binding Описание_предмета}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </ScrollViewer>
+    </Grid>
+</Page>

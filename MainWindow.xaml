@@ -1,0 +1,28 @@
+﻿<Window x:Class="ПМ._07_Соадминистрирование.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ПМ._07_Соадминистрирование"
+        mc:Ignorable="d" Icon="Images/BoyPK.jpg" FontSize="14" 
+        
+        Title="Студенты" Height="450" Width="800">
+    <Border CornerRadius="5">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="11*"/>
+            </Grid.RowDefinitions>
+            <Menu Grid.Row="1" >
+                <MenuItem Header="Студенты" x:Name="btnStudents" Click="btnStudents_Click"/>
+                <MenuItem Header="Предметы" x:Name="btnSubjects" Click="btnSubjects_Click"/>
+                <MenuItem Header="Обучение" x:Name="btnEducation" Click="btnEducation_Click"/>
+            </Menu>
+            <Image Grid.Row="0" Source="/BoyPK.jpg" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <Frame  x:Name="mainframe" Grid.Row="2" NavigationUIVisibility="Hidden">
+                
+            </Frame>
+        </Grid>
+    </Border>
+</Window>

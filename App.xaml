@@ -1,0 +1,24 @@
+﻿<Application x:Class="ПМ._07_Соадминистрирование.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ПМ._07_Соадминистрирование"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="{x:Type Window}">
+            <Setter Property="FontSize" Value="14" />
+        </Style>
+        <Style TargetType="{x:Type Page}">
+            <Setter Property="FontSize" Value="14" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        <Style TargetType="DataGrid">
+            <Setter Property="FontSize" Value="14"/>
+            
+        </Style>
+        <Style TargetType="MenuItem">
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+    </Application.Resources>
+</Application>

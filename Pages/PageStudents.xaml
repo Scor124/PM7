@@ -1,0 +1,35 @@
+﻿<Page x:Class="ПМ._07_Соадминистрирование.Pages.PageStudents"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ПМ._07_Соадминистрирование.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageStudents" Background="Transparent">
+    <Grid Margin="10" >
+        <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" >
+            <DataGrid x:Name="studentsDataGrid" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False" >
+                <DataGrid.RowStyle>
+                    <Style TargetType="DataGridRow">
+                        <Setter Property="Height" Value="26"/>
+                    </Style>
+                </DataGrid.RowStyle>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Ф.И.О." Binding="{Binding ФИО}"/>
+                    <DataGridTextColumn Header="Пол" Binding="{Binding Пол}"/>
+                    <DataGridTextColumn Header="Адрес" Binding="{Binding Адрес}"/>
+                    <DataGridTextColumn Header="Телефон" Binding="{Binding Телефон}"/>
+                    <DataGridTextColumn Header="Пасспортные данные" Binding="{Binding Пасспортные_данные}"/>
+                    <DataGridTextColumn Header="Группа" Binding="{Binding Группа}"/>
+                    <DataGridTextColumn Header="Дата рождения" Binding="{Binding Дата_рождения,StringFormat={}{0:dd.MM.yyyy}}" />
+                    <DataGridTextColumn Header="Дата поступления" Binding="{Binding Дата_поступления,StringFormat={}{0:dd.MM.yyyy}}"/>
+                    <DataGridTextColumn Header="Очная форма поступления" Binding="{Binding Очная_форма_поступления}"/>
+                    <DataGridTextColumn Header="Номер зачетки" Binding="{Binding Номер_зачетки}"/>
+                    <DataGridTextColumn Header="Курс" Binding="{Binding Курс}"/>
+                    <DataGridTextColumn Header="Код специальности" Binding="{Binding Код_специальности}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </ScrollViewer>
+    </Grid>
+</Page>
